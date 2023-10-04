@@ -39,9 +39,10 @@ main {
 
 summary {
 	background: #efefef;
-	padding: 38px 269px;
 	text-align: center;
 	margin-bottom: 40px;
+	max-width: 100%;
+	padding: 38px 0;
 }
 
 .summary-title {
@@ -56,13 +57,15 @@ summary {
 	color: #000;
 	font-family: Roboto;
 	font-size: 16px;
-	font-style: normal;
 	font-weight: 400;
-	line-height: normal;
+	width: 972px;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
 .news {
 	display: flex;
+	padding: 0 12px 12px 12px;
 }
 
 .news article:not(:last-child) {
@@ -111,7 +114,7 @@ footer p {
 	line-height: 50px;
 }
 
-nav {
+.nav-desktop {
 	width: 150px;
 	background: #191718;
 	display: block;
@@ -151,4 +154,35 @@ nav {
 
 .nav-item:hover a {
 	color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav-desktop {
+		display: none;
+	}
+
+	.news {
+		flex-wrap: wrap;
+	}
+
+	.news article:not(:last-child) {
+		margin-right: 0;
+		margin-bottom: 1.5em;
+	}
+
+	.news .news-title {
+		font-size: 2em;
+	}
+
+	.news figure figcaption {
+		font-size: 2em;
+	}
+
+	.summary-title {
+		font-size: 1.8em;
+	}
+
+	.summary-desc {
+		font-size: 2em;
+	}
 }
