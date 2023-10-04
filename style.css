@@ -185,4 +185,8 @@ footer p {
 	.summary-desc {
 		font-size: 2em;
 	}
+
+	footer {
+		font-size: 2em;
+	}
 }
