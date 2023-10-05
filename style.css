@@ -230,7 +230,12 @@ footer p {
 	transform: none;
 }
 
+#mobile-menu-toggle input:checked ~ .nav-wrapper {
+	visibility: visible;
+}
+
 .nav-mobile .nav-wrapper {
+	visibility: hidden;
 	position: absolute;
 	list-style-type: none;
 	width: 180px;
