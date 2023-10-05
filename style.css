@@ -232,14 +232,19 @@ footer p {
 
 #mobile-menu-toggle input:checked ~ .nav-wrapper {
 	visibility: visible;
+	height: 100vh;
+}
+
+#mobile-menu-toggle input:checked ~ .nav-wrapper .nav-mobile-item {
+	visibility: visible;
 }
 
 .nav-mobile .nav-wrapper {
 	visibility: hidden;
 	position: absolute;
+	height: 0;
 	list-style-type: none;
 	width: 180px;
-	height: 100vh;
 	box-shadow: 0 0 10px #191718;
 	margin: -50px 0 0 -50px;
 	padding: 96px 0px 0 30px;
@@ -253,6 +258,7 @@ footer p {
 .nav-mobile-item {
 	width: 100%;
 	transition-delay: 0.5s;
+	visibility: hidden;
 }
 
 .nav-mobile-item a {
