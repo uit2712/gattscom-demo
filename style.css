@@ -273,6 +273,10 @@ footer p {
 		display: unset;
 	}
 
+	main {
+		max-width: 100%;
+	}
+
 	.nav-desktop {
 		display: none;
 	}
